@@ -15,7 +15,7 @@ class TaskService {
     public function addTask($funcId,$param) {
         $taskId =  $this->taskDao->addTask($funcId,$param);
         if($taskId) {
-            return "Task .". $taskId." Added";
+            return "Task ". $taskId." Added";
         }
     }
     
